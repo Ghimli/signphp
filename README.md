@@ -7,6 +7,6 @@ php5-gmp
 Usage:
 
 Fill $key and $secret.
-Run script.
+Run script:
 
 > php example.php
