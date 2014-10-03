@@ -6,7 +6,6 @@ function bitmaszyna_api($method, $params = array()){
 	$secret='';
 	$params["nonce"] = time();
 	$post = http_build_query($params, "", "&");
-	$sign = hash_hmac("sha512", $post, $secret);
 	$bitmaszynaApi = new BitmaszynaApi();
 	$headers = array("Rest-Key: " . $key, "Rest-Sign: " . $bitmaszynaApi->signature($post,$secret));
 	$curl = curl_init();
