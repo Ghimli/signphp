@@ -19,5 +19,5 @@ function bitmaszyna_api($method, $params = array()){
 	return json_decode($ret, true);
 }
 
-bitmaszyna_api("funds","");
+bitmaszyna_api("funds",array());
 ?>
